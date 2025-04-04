@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Ranveer SPORTs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Cart Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8">Your Shopping Cart</h1>
+        
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Cart Items -->
+            <div class="lg:w-2/3">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <!-- Cart Header -->
+                    <div class="hidden md:grid grid-cols-12 bg-gray-100 p-4 font-semibold">
+                        <div class="col-span-5">Product</div>
+                        <div class="col-span-2 text-center">Price</div>
+                        <div class="col-span-3 text-center">Quantity</div>
+                        <div class="col-span-2 text-right">Total</div>
+                    </div>
+                    
+                    <!-- Cart Items -->
+                    <div class="divide-y">
+                        <!-- Item 1 -->
+                        <div class="p-4">
+                            <div class="flex flex-col md:flex-row md:items-center">
+                                <div class="flex items-center md:w-5/12 mb-4 md:mb-0">
+                                    <button class="text-gray-400 hover:text-red-500 mr-4">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <div class="h-20 w-20 bg-gray-200 rounded overflow-hidden mr-4">
+                                        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Pro Runner X" class="h-full w-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h3 class="font-medium">Pro Runner X</h3>
+                                        <p class="text-sm text-gray-500">Size: 9, Color: Blue</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:w-2/12 mb-4 md:mb-0">
+                                    <div class="md:text-center">
+                                        <span class="md:hidden font-medium mr-2">Price:</span>
+                                        <span class="font-medium">₹4,999</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:w-3/12 mb-4 md:mb-0">
+                                    <div class="flex items-center justify-center">
+                                        <button class="h-8 w-8 border rounded-l flex items-center justify-center">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="number" value="1" min="1" class="h-8 w-12 border-t border-b text-center">
+                                        <button class="h-8 w-8 border rounded-r flex items-center justify-center">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:w-2/12">
+                                    <div class="flex justify-end">
+                                        <span class="md:hidden font-medium mr-2">Total:</span>
+                                        <span class="font-medium">₹4,999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="p-4">
+                            <div class="flex flex-col md:flex-row md:items-center">
+                                <div class="flex items-center md:w-5/12 mb-4 md:mb-0">
+                                    <button class="text-gray-400 hover:text-red-500 mr-4">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                    <div class="h-20 w-20 bg-gray-200 rounded overflow-hidden mr-4">
+                                        <img src="https://images.pexels.com/photos/221247/pexels-photo-221247.jpeg" alt="Premium Yoga Mat" class="h-full w-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h3 class="font-medium">Premium Yoga Mat</h3>
+                                        <p class="text-sm text-gray-500">Color: Purple</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:w-2/12 mb-4 md:mb-0">
+                                    <div class="md:text-center">
+                                        <span class="md:hidden font-medium mr-2">Price:</span>
+                                        <span class="font-medium">₹2,499</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:w-3/12 mb-4 md:mb-0">
+                                    <div class="flex items-center justify-center">
+                                        <button class="h-8 w-8 border rounded-l flex items-center justify-center">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input type="number" value="1" min="1" class="h-8 w-12 border-t border-b text-center">
+                                        <button class="h-8 w-8 border rounded-r flex items-center justify-center">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:w-2/12">
+                                    <div class="flex justify-end">
+                                        <span class="md:hidden font-medium mr-2">Total:</span>
+                                        <span class="font-medium">₹2,499</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cart Footer -->
+                    <div class="p-4 border-t flex justify-between items-center">
+                        <button class="text-blue-600 hover:text-blue-800 flex items-center">
+                            <i class="fas fa-arrow-left mr-2"></i>
+                            Continue Shopping
+                        </button>
+                        <button class="text-red-500 hover:text-red-700">
+                            Clear Cart
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Coupon Code -->
+                <div class="bg-white rounded-lg shadow-md p-4 mt-4">
+                    <h3 class="font-semibold mb-2">Have a Coupon Code?</h3>
+                    <div class="flex">
+                        <input type="text" placeholder="Enter coupon code" class="flex-1 border rounded-l px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-r">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Order Summary -->
+            <div class="lg:w-1/3">
+                <div class="bg-white rounded-lg shadow-md p-6 sticky top-4">
+                    <h2 class="text-xl font-bold mb-4">Order Summary</h2>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex justify-between">
+                            <span>Subtotal (2 items)</span>
+                            <span>₹7,498</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Shipping</span>
+                            <span>₹99</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Tax</span>
+                            <span>₹899</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Discount</span>
+                            <span class="text-green-600">-₹2,000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t pt-4 mb-6">
+                        <div class="flex justify-between font-bold text-lg">
+                            <span>Total</span>
+                            <span>₹6,496</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-4 rounded-lg font-bold transition duration-300 mb-4">
+                        Proceed to Checkout
+                    </button>
+                    
+                    <div class="text-center text-sm text-gray-500">
+                        <p>or</p>
+                        <button class="text-blue-600 hover:text-blue-800 mt-2">
+                            Check out with PayPal
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Secure Checkout -->
+                <div class="bg-white rounded-lg shadow-md p-4 mt-4 flex items-center">
+                    <div class="mr-4 text-green-600">
+                        <i class="fas fa-lock text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-medium">Secure Checkout</h4>
+                        <p class="text-sm text-gray-500">All transactions are secure and encrypted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Load header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
