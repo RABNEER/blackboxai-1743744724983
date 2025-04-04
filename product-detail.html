@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Runner X - Ranveer SPORTs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Product Detail -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row gap-8">
+            <!-- Product Images -->
+            <div class="w-full md:w-1/2">
+                <!-- Main Image -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-4">
+                    <div class="h-96 bg-gray-200 flex items-center justify-center">
+                        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Pro Runner X" class="h-full object-cover">
+                    </div>
+                </div>
+                
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-4 gap-2">
+                    <div class="cursor-pointer border-2 border-blue-500 rounded">
+                        <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Pro Runner X" class="h-20 w-full object-cover">
+                    </div>
+                    <div class="cursor-pointer border rounded hover:border-blue-500">
+                        <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" alt="Pro Runner X Side View" class="h-20 w-full object-cover">
+                    </div>
+                    <div class="cursor-pointer border rounded hover:border-blue-500">
+                        <img src="https://images.pexels.com/photos/2857045/pexels-photo-2857045.jpeg" alt="Pro Runner X Bottom" class="h-20 w-full object-cover">
+                    </div>
+                    <div class="cursor-pointer border rounded hover:border-blue-500">
+                        <img src="https://images.pexels.com/photos/2857046/pexels-photo-2857046.jpeg" alt="Pro Runner X Closeup" class="h-20 w-full object-cover">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Info -->
+            <div class="w-full md:w-1/2">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h1 class="text-2xl font-bold mb-2">Pro Runner X</h1>
+                            <span class="text-gray-500">Running Shoes</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">(42 reviews)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="my-4">
+                        <span class="text-3xl font-bold">₹4,999</span>
+                        <span class="text-lg text-gray-500 line-through ml-2">₹6,999</span>
+                        <span class="text-lg text-red-500 ml-2">29% off</span>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <span class="text-green-600 font-medium"><i class="fas fa-check-circle mr-1"></i> In Stock</span>
+                        <span class="text-gray-500 text-sm ml-2">(Only 5 left!)</span>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Color</h3>
+                        <div class="flex space-x-2">
+                            <button class="h-8 w-8 rounded-full bg-blue-600 border-2 border-blue-700"></button>
+                            <button class="h-8 w-8 rounded-full bg-red-500 border-2 border-gray-200"></button>
+                            <button class="h-8 w-8 rounded-full bg-black border-2 border-gray-200"></button>
+                            <button class="h-8 w-8 rounded-full bg-gray-200 border-2 border-gray-300"></button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Size</h3>
+                        <div class="grid grid-cols-5 gap-2">
+                            <button class="py-1 px-3 border rounded hover:border-blue-500 hover:bg-blue-50">6</button>
+                            <button class="py-1 px-3 border rounded hover:border-blue-500 hover:bg-blue-50">7</button>
+                            <button class="py-1 px-3 border rounded hover:border-blue-500 hover:bg-blue-50">8</button>
+                            <button class="py-1 px-3 border rounded bg-blue-600 text-white border-blue-700">9</button>
+                            <button class="py-1 px-3 border rounded hover:border-blue-500 hover:bg-blue-50">10</button>
+                            <button class="py-1 px-3 border rounded hover:border-blue-500 hover:bg-blue-50">11</button>
+                            <button class="py-1 px-3 border rounded hover:border-blue-500 hover:bg-blue-50">12</button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Quantity</h3>
+                        <div class="flex items-center">
+                            <button class="h-10 w-10 border rounded-l flex items-center justify-center">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="number" value="1" min="1" max="5" class="h-10 w-16 border-t border-b text-center">
+                            <button class="h-10 w-10 border rounded-r flex items-center justify-center">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 mb-6">
+                        <button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg transition duration-300">
+                            Add to Cart
+                        </button>
+                        <button class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-4 rounded-lg transition duration-300">
+                            Buy Now
+                        </button>
+                    </div>
+                    
+                    <div class="border-t pt-4">
+                        <h3 class="font-semibold mb-2">Delivery Options</h3>
+                        <div class="flex items-center">
+                            <i class="fas fa-truck text-gray-500 mr-2"></i>
+                            <span>Standard Delivery: 3-5 business days</span>
+                        </div>
+                        <div class="flex items-center mt-1">
+                            <i class="fas fa-bolt text-gray-500 mr-2"></i>
+                            <span>Express Delivery: 1-2 business days (₹99 extra)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Tabs -->
+        <div class="mt-8 bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="border-b">
+                <nav class="flex -mb-px">
+                    <button class="py-4 px-6 text-center border-b-2 border-blue-500 font-medium text-blue-600">
+                        Description
+                    </button>
+                    <button class="py-4 px-6 text-center border-b-2 border-transparent font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                        Specifications
+                    </button>
+                    <button class="py-4 px-6 text-center border-b-2 border-transparent font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                        Reviews (42)
+                    </button>
+                </nav>
+            </div>
+            
+            <div class="p-6">
+                <h3 class="font-semibold text-lg mb-4">Product Description</h3>
+                <p class="text-gray-600 mb-4">
+                    The Pro Runner X is designed for serious runners who demand both comfort and performance. 
+                    Featuring our revolutionary cushioning technology, these shoes provide exceptional shock 
+                    absorption while maintaining energy return for maximum efficiency.
+                </p>
+                
+                <h4 class="font-semibold mb-2">Key Features:</h4>
+                <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                    <li>Breathable mesh upper for maximum ventilation</li>
+                    <li>Responsive cushioning for energy return</li>
+                    <li>Durable rubber outsole with traction pattern</li>
+                    <li>Lightweight design (only 280g per shoe)</li>
+                    <li>Removable insole for orthotic compatibility</li>
+                </ul>
+                
+                <h4 class="font-semibold mb-2">Recommended For:</h4>
+                <p class="text-gray-600">
+                    Road running, marathon training, daily jogging. Ideal for neutral runners or those with mild 
+                    overpronation.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Related Products -->
+        <div class="mt-12">
+            <h2 class="text-2xl font-bold mb-6">You May Also Like</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Related Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg" alt="Running Shoes" class="h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Runner Lite</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹3,999</span>
+                            <button class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://images.pexels.com/photos/2857045/pexels-photo-2857045.jpeg" alt="Running Socks" class="h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Performance Socks</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹599</span>
+                            <button class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg" alt="Running Shorts" class="h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Running Shorts</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹1,299</span>
+                            <button class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Product 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://images.pexels.com/photos/2857046/pexels-photo-2857046.jpeg" alt="Fitness Tracker" class="h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-1">Fitness Tracker</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold">₹2,499</span>
+                            <button class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Load header and footer
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
